@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+   font-family: 'Lobster', cursive;
+}
+
+.wrapper {
+   overflow: hidden;
+   position: relative;
+   min-height: 100%;
+}
+
+h2 {
+   font-size: 40px;
+   font-weight: 700;
+   color: rgb(85, 85, 85);
+   text-align: center;
+}
+
+[class*="__container"] {
+   max-width: 1400px;
+   margin: 0 auto;
+
+}
+
+.auto-assembly__garage {
+   position: relative;
+   height: 900px;
+}
+
+.auto-assembly__shelve {
+   position: absolute;
+   width: 488px;
+   height: 51px;
+   background: url('../img/auto-assembly/shelve.png') no-repeat;
+}
+
+.auto-assembly__shelve--position-1 {
+   top: 150px;
+   left: 50px;
+}
+
+.auto-assembly__shelve--position-2 {
+   top: 250px;
+   left: 50px;
+}
+
+.auto-assembly__shelve--position-3 {
+   top: 350px;
+   left: 50px;
+}
+
+.auto-assembly__shelve--position-4 {
+   top: 450px;
+   left: 50px;
+}
+
+.auto-assembly__shelve--position-5 {
+   top: 550px;
+   left: 50px;
+}
+
+.auto-assembly__shelve--position-6 {
+   top: 670px;
+   left: 50px;
+}
+
+
+.auto-assembly__details div:not(:first-child) {
+   /* На властивість transition раптом натрапив в архиві уроку lesson_11 від Жені
+   і вирішив теж її використати... */
+   transition: all 0.7s ease-in 0s;
+
+   position: absolute;
+   z-index: 1;
+
+}
+
+.auto-assembly__assemble {
+   position: absolute;
+   left: 800px;
+   top: 250px;
+   width: 400px;
+   height: 150px;
+   background-color: lightblue;
+   font-size: 25px;
+   line-height: 150px;
+   font-weight: 700;
+   color: rgb(85, 85, 85);
+   text-align: center;
+}
+
+.auto-assembly__assemble:hover {
+   background-color: lightcoral;
+}
+
+.auto-assembly__detail-1 {
+   top: 147px;
+   left: 90px;
+   width: 21px;
+   height: 17px;
+   background: url('../img/auto-assembly/detail-1.png') no-repeat;
+}
+
+.auto-assembly__detail-2 {
+   top: 147px;
+   left: 120px;
+   width: 24px;
+   height: 15px;
+   background: url('../img/auto-assembly/detail-2.png') no-repeat;
+}
+
+.auto-assembly__detail-3 {
+   top: 152px;
+   left: 150px;
+   width: 16px;
+   height: 11px;
+   background: url('../img/auto-assembly/detail-3.png') no-repeat;
+}
+
+.auto-assembly__detail-4 {
+   top: 150px;
+   left: 180px;
+   width: 29px;
+   height: 13px;
+   background: url('../img/auto-assembly/detail-4.png') no-repeat;
+}
+
+.auto-assembly__detail-5 {
+   top: 137px;
+   left: 220px;
+   width: 26px;
+   height: 27px;
+   background: url('../img/auto-assembly/detail-5.png') no-repeat;
+}
+
+.auto-assembly__detail-6 {
+   top: 137px;
+   left: 260px;
+   width: 17px;
+   height: 26px;
+   background: url('../img/auto-assembly/detail-6.png') no-repeat;
+}
+
+.auto-assembly__detail-7 {
+   top: 135px;
+   left: 293px;
+   width: 22px;
+   height: 27px;
+   background: url('../img/auto-assembly/detail-7.png') no-repeat;
+}
+
+.auto-assembly__detail-8 {
+   top: 138px;
+   left: 330px;
+   width: 34px;
+   height: 24px;
+   background: url('../img/auto-assembly/detail-8.png') no-repeat;
+}
+
+.auto-assembly__detail-9 {
+   top: 137px;
+   left: 373px;
+   width: 27px;
+   height: 30px;
+   background: url('../img/auto-assembly/detail-9.png') no-repeat;
+}
+
+.auto-assembly__detail-10 {
+   top: 140px;
+   left: 413px;
+   width: 33px;
+   height: 22px;
+   background: url('../img/auto-assembly/detail-10.png') no-repeat;
+}
+
+.auto-assembly__detail-11 {
+   top: 137px;
+   left: 460px;
+   width: 32px;
+   height: 25px;
+   background: url('../img/auto-assembly/detail-11.png') no-repeat;
+}
+
+.auto-assembly__detail-12 {
+   top: 237px;
+   left: 95px;
+   width: 12px;
+   height: 29px;
+   background: url('../img/auto-assembly/detail-12.png') no-repeat;
+}
+
+.auto-assembly__detail-13 {
+   top: 228px;
+   left: 120px;
+   width: 33px;
+   height: 38px;
+   background: url('../img/auto-assembly/detail-13.png') no-repeat;
+}
+
+.auto-assembly__detail-14 {
+   top: 240px;
+   left: 165px;
+   width: 27px;
+   height: 24px;
+   background: url('../img/auto-assembly/detail-14.png') no-repeat;
+}
+
+.auto-assembly__detail-15 {
+   top: 245px;
+   left: 205px;
+   width: 18px;
+   height: 19px;
+   background: url('../img/auto-assembly/detail-15.png') no-repeat;
+}
+
+.auto-assembly__detail-16 {
+   top: 233px;
+   left: 240px;
+   width: 29px;
+   height: 32px;
+   background: url('../img/auto-assembly/detail-16.png') no-repeat;
+}
+
+.auto-assembly__detail-17 {
+   top: 240px;
+   left: 283px;
+   width: 13px;
+   height: 24px;
+   background: url('../img/auto-assembly/detail-17.png') no-repeat;
+}
+
+.auto-assembly__detail-18 {
+   top: 225px;
+   left: 313px;
+   width: 34px;
+   height: 38px;
+   background: url('../img/auto-assembly/detail-18.png') no-repeat;
+}
+
+.auto-assembly__detail-19 {
+   top: 230px;
+   left: 360px;
+   width: 31px;
+   height: 32px;
+   background: url('../img/auto-assembly/detail-19.png') no-repeat;
+}
+
+.auto-assembly__detail-20 {
+   top: 240px;
+   left: 407px;
+   width: 28px;
+   height: 19px;
+   background: url('../img/auto-assembly/detail-20.png') no-repeat;
+}
+
+.auto-assembly__detail-21 {
+   top: 235px;
+   left: 447px;
+   width: 25px;
+   height: 25px;
+   background: url('../img/auto-assembly/detail-21.png') no-repeat;
+}
+
+.auto-assembly__detail-22 {
+   top: 231px;
+   left: 482px;
+   width: 23px;
+   height: 30px;
+   background: url('../img/auto-assembly/detail-22.png') no-repeat;
+}
+
+.auto-assembly__detail-23 {
+   top: 345px;
+   left: 90px;
+   width: 19px;
+   height: 21px;
+   background: url('../img/auto-assembly/detail-23.png') no-repeat;
+}
+
+.auto-assembly__detail-24 {
+   top: 347px;
+   left: 123px;
+   width: 20px;
+   height: 19px;
+   background: url('../img/auto-assembly/detail-24.png') no-repeat;
+}
+
+.auto-assembly__detail-25 {
+   top: 347px;
+   left: 160px;
+   width: 13px;
+   height: 16px;
+   background: url('../img/auto-assembly/detail-25.png') no-repeat;
+}
+
+.auto-assembly__detail-26 {
+   top: 347px;
+   left: 190px;
+   width: 18px;
+   height: 19px;
+   background: url('../img/auto-assembly/detail-26.png') no-repeat;
+}
+
+.auto-assembly__detail-27 {
+   top: 347px;
+   left: 190px;
+   width: 19px;
+   height: 17px;
+   background: url('../img/auto-assembly/detail-27.png') no-repeat;
+}
+
+.auto-assembly__detail-28 {
+   top: 347px;
+   left: 225px;
+   width: 15px;
+   height: 18px;
+   background: url('../img/auto-assembly/detail-28.png') no-repeat;
+}
+
+.auto-assembly__detail-29 {
+   top: 340px;
+   left: 255px;
+   width: 25px;
+   height: 25px;
+   background: url('../img/auto-assembly/detail-29.png') no-repeat;
+}
+
+.auto-assembly__detail-30 {
+   top: 345px;
+   left: 295px;
+   width: 15px;
+   height: 18px;
+   background: url('../img/auto-assembly/detail-30.png') no-repeat;
+}
+
+.auto-assembly__detail-31 {
+   top: 338px;
+   left: 325px;
+   width: 25px;
+   height: 26px;
+   background: url('../img/auto-assembly/detail-31.png') no-repeat;
+}
+
+.auto-assembly__detail-32 {
+   top: 332px;
+   left: 365px;
+   width: 36px;
+   height: 34px;
+   background: url('../img/auto-assembly/detail-32.png') no-repeat;
+}
+
+.auto-assembly__detail-33 {
+   top: 335px;
+   left: 415px;
+   width: 30px;
+   height: 31px;
+   background: url('../img/auto-assembly/detail-33.png') no-repeat;
+}
+
+.auto-assembly__detail-34 {
+   top: 347px;
+   left: 460px;
+   width: 30px;
+   height: 16px;
+   background: url('../img/auto-assembly/detail-34.png') no-repeat;
+}
+
+.auto-assembly__detail-35 {
+   top: 449px;
+   left: 90px;
+   width: 15px;
+   height: 14px;
+   background: url('../img/auto-assembly/detail-35.png') no-repeat;
+}
+
+.auto-assembly__detail-36 {
+   top: 435px;
+   left: 125px;
+   width: 30px;
+   height: 28px;
+   background: url('../img/auto-assembly/detail-36.png') no-repeat;
+}
+
+.auto-assembly__detail-37 {
+   top: 440px;
+   left: 170px;
+   width: 31px;
+   height: 22px;
+   background: url('../img/auto-assembly/detail-37.png') no-repeat;
+}
+
+.auto-assembly__detail-38 {
+   top: 435px;
+   left: 218px;
+   width: 21px;
+   height: 27px;
+   background: url('../img/auto-assembly/detail-38.png') no-repeat;
+}
+
+.auto-assembly__detail-39 {
+   top: 439px;
+   left: 255px;
+   width: 23px;
+   height: 23px;
+   background: url('../img/auto-assembly/detail-39.png') no-repeat;
+}
+
+.auto-assembly__detail-40 {
+   top: 439px;
+   left: 295px;
+   width: 23px;
+   height: 23px;
+   background: url('../img/auto-assembly/detail-40.png') no-repeat;
+}
+
+.auto-assembly__detail-41 {
+   top: 418px;
+   left: 333px;
+   width: 22px;
+   height: 45px;
+   background: url('../img/auto-assembly/detail-41.png') no-repeat;
+}
+
+.auto-assembly__detail-42 {
+   top: 433px;
+   left: 377px;
+   width: 40px;
+   height: 29px;
+   background: url('../img/auto-assembly/detail-42.png') no-repeat;
+}
+
+.auto-assembly__detail-43 {
+   top: 433px;
+   left: 427px;
+   width: 33px;
+   height: 32px;
+   background: url('../img/auto-assembly/detail-43.png') no-repeat;
+}
+
+.auto-assembly__detail-44 {
+   top: 430px;
+   left: 475px;
+   width: 25px;
+   height: 33px;
+   background: url('../img/auto-assembly/detail-44.png') no-repeat;
+}
+
+.auto-assembly__detail-45 {
+   top: 525px;
+   left: 80px;
+   width: 41px;
+   height: 38px;
+   background: url('../img/auto-assembly/detail-45.png') no-repeat;
+}
+
+.auto-assembly__detail-46 {
+   top: 530px;
+   left: 145px;
+   width: 20px;
+   height: 34px;
+   background: url('../img/auto-assembly/detail-46.png') no-repeat;
+}
+
+.auto-assembly__detail-47 {
+   top: 529px;
+   left: 190px;
+   width: 25px;
+   height: 36px;
+   background: url('../img/auto-assembly/detail-47.png') no-repeat;
+}
+
+.auto-assembly__detail-48 {
+   top: 540px;
+   left: 240px;
+   width: 18px;
+   height: 23px;
+   background: url('../img/auto-assembly/detail-48.png') no-repeat;
+}
+
+.auto-assembly__detail-49 {
+   top: 540px;
+   left: 280px;
+   width: 17px;
+   height: 22px;
+   background: url('../img/auto-assembly/detail-49.png') no-repeat;
+}
+
+.auto-assembly__detail-50 {
+   top: 540px;
+   left: 320px;
+   width: 19px;
+   height: 22px;
+   background: url('../img/auto-assembly/detail-50.png') no-repeat;
+}
+
+.auto-assembly__detail-51 {
+   top: 520px;
+   left: 370px;
+   width: 43px;
+   height: 44px;
+   background: url('../img/auto-assembly/detail-51.png') no-repeat;
+}
+
+.auto-assembly__detail-52 {
+   top: 500px;
+   left: 450px;
+   width: 34px;
+   height: 63px;
+   background: url('../img/auto-assembly/detail-52.png') no-repeat;
+}
+
+.auto-assembly__detail-53 {
+   top: 597px;
+   left: 110px;
+   width: 84px;
+   height: 94px;
+   background: url('../img/auto-assembly/detail-53.png') no-repeat;
+}
+
+.auto-assembly__detail-54 {
+   top: 600px;
+   left: 230px;
+   width: 85px;
+   height: 82px;
+   background: url('../img/auto-assembly/detail-54.png') no-repeat;
+}
+
+.auto-assembly__detail-55 {
+   top: 600px;
+   left: 350px;
+   width: 85px;
+   height: 82px;
+   background: url('../img/auto-assembly/detail-54.png') no-repeat;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-1 {
+   top: 661px;
+   left: 827px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-2 {
+   top: 645px;
+   left: 827px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-3 {
+   top: 635px;
+   left: 840px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-4 {
+   top: 623px;
+   left: 841px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-5 {
+   top: 596px;
+   left: 844px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-6 {
+   top: 593px;
+   left: 865px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-7 {
+   top: 590px;
+   left: 882px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-8 {
+   top: 588px;
+   left: 905px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-9 {
+   top: 556px;
+   left: 956px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-10 {
+   top: 539px;
+   left: 975px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-11 {
+   top: 537px;
+   left: 1009px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-12 {
+   top: 537px;
+   left: 1040px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-13 {
+   top: 535px;
+   left: 1052px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-14 {
+   top: 535px;
+   left: 1080px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-15 {
+   top: 535px;
+   left: 1106px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-16 {
+   top: 533px;
+   left: 1123px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-17 {
+   top: 535px;
+   left: 1151px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-18 {
+   top: 534px;
+   left: 1159px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-19 {
+   top: 569px;
+   left: 1170px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-20 {
+   top: 599px;
+   left: 1185px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-21 {
+   top: 653px;
+   left: 1204px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-22 {
+   top: 625px;
+   left: 1194px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-23 {
+   top: 617px;
+   left: 1180px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-24 {
+   top: 610px;
+   left: 1160px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-25 {
+   top: 595px;
+   left: 1161px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-26 {
+   top: 573px;
+   left: 1150px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-27 {
+   top: 559px;
+   left: 1139px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-28 {
+   top: 564px;
+   left: 1125px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-29 {
+   top: 554px;
+   left: 1099px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-30 {
+   top: 560px;
+   left: 1083px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-31 {
+   top: 559px;
+   left: 983px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-32 {
+   top: 578px;
+   left: 940px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-33 {
+   top: 610px;
+   left: 914px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-34 {
+   top: 617px;
+   left: 884px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-35 {
+   top: 619px;
+   left: 869px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-36 {
+   top: 575px;
+   left: 1053px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-37 {
+   top: 580px;
+   left: 1085px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-38 {
+   top: 577px;
+   left: 1139px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-39 {
+   top: 605px;
+   left: 1135px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-40 {
+   top: 642px;
+   left: 928px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-41 {
+   top: 614px;
+   left: 946px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-42 {
+   top: 660px;
+   left: 930px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-43 {
+   top: 655px;
+   left: 972px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-44 {
+   top: 652px;
+   left: 1007px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-45 {
+   top: 649px;
+   left: 1034px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-46 {
+   top: 652px;
+   left: 1077px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-47 {
+   top: 651px;
+   left: 1093px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-48 {
+   top: 585px;
+   left: 980px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-49 {
+   top: 627px;
+   left: 1043px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-50 {
+   top: 605px;
+   left: 1046px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-51 {
+   top: 607px;
+   left: 1061px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-52 {
+   top: 585px;
+   left: 1104px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-53 {
+   top: 561px;
+   left: 967px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-54 {
+   top: 635px;
+   left: 845px;
+}
+
+.auto-assembly__assemble:hover~.auto-assembly__detail-55 {
+   top: 635px;
+   left: 1118px;
+}
+
+.auto-assembly__pedestal {
+   position: absolute;
+   top: 550px;
+   left: 650px;
+   width: 750px;
+   height: 422px;
+   background: url('../img/auto-assembly/pedestal.png') no-repeat;
+   z-index: 0;
+}
